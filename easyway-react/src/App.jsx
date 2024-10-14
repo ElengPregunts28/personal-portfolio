@@ -1017,9 +1017,7 @@ function App() {
     </div>{" "}
     {/* /row */}
   </footer>
-  <div id="preloader">
-    <div id="loader" />
-  </div>
+
 
 </>
 
