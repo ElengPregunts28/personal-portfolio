@@ -1091,13 +1091,12 @@ header {
 }
 header .row {
 	position: relative;
-	min-height: 66px;
+	min-height: 50px;
 }
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
-	min-height: 66px;
+	height: 80px;
 	position: absolute;
 	left: 90px;
 	top: 0;
@@ -1192,70 +1191,29 @@ header .logo a {
 }
 
 /* is clicked */
-.menu-toggle.is-clicked span {
-	background-color: rgba(255, 0, 119, 0);
-}
-.menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #ff0077;
-	-moz-transition-delay: 0s, 0.2s;
-	-o-transition-delay: 0s, 0.2s;
-	-webkit-transition-delay: 0s, 0.2s;
-	-ms-transition-delay: 0s, 0.2s;
-	transition-delay: 0s, 0.2s;
-}
-.menu-toggle.is-clicked span::before {
-	top: 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.menu-toggle.is-clicked span::after {
-	bottom: 0;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
+
 
 /* navigation panel */
-#main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
+
+.main-navigation > li {
+	display: inline-block;
+	padding: 30px;
 }
 
-/* dropdown nav */
-.main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
-}
-.main-navigation > li {
-	display: block;
-	height: auto;
-	text-align: left;
-	padding: 0;
-}
 .main-navigation li a {
-	display: block;
 	color: #FFFFFF;
 	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
+	line-height: 20px;
 	border: none;
+	padding: 25px;
+	font-weight: bold;
 }
+
 .main-navigation li a:hover {
 	color: #FF0077;
 	padding-left: 1rem;
 }
-.main-navigation li.current > a {
+.main-navigation li.current > a:hover {
 	background: none;
 	color: #FF0077;
 }
