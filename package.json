@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -r https://github.com/ElengPregunts28/personal-portfolio.git",
     "clean": "rm -rf dist",
     "dev": "vite",
     "build": "vite build",
