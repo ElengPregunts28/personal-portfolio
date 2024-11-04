@@ -1,678 +1,991 @@
-
-
 function App() {
-
   return (
     <>
-  {/* header 
-   ================================================== */}
-  <header>
-    <div className="row">
-      <div className="top-bar">
-        <nav id="main-nav-wrap">
-          <ul className="main-navigation">
-            <li className="current">
-              <a className="smoothscroll" href="#intro" title="">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#about" title="">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#resume" title="">
-                RESUME
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#portfolio" title="">
-                PROJECTS
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#contact" title="">
-                CONTACTS
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>{" "}
-      {/* /top-bar */}
-    </div>{" "}
-    {/* /row */}
-  </header>{" "}
-  {/* /header */}
-  {/* intro section
-   ================================================== */}
-  <section id="intro">
-    <div className="intro-overlay" />
-    <div className="intro-content">
-      <div className="row">
-        <div className="col-twelve">
-          <h5>Hello, World.</h5>
-          <h1>I'm Ellaine Pregunta.</h1>
-          <p className="intro-position">
-            <span>Front-end Developer</span>
-            <span>UI/UX Designer</span>
-          </p>
-          <a className="button stroke smoothscroll" href="#about" title="">
-            More About Me
-          </a>
-        </div>
-      </div>
-    </div>{" "}
-    {/* /intro-content */}
-    <ul className="intro-social">
-      <li>
-        <a href="https://www.facebook.com/eleng.pregunta">
-          <i className="fa fa-facebook" href=""/>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/ellainezch_">
-          <i className="fa fa-instagram" href=""/>
-        </a>
-      </li>
-    </ul>{" "}
-    {/* /intro-social */}
-  </section>{" "}
-  {/* /intro */}
-  {/* about section
-   ================================================== */}
-  <section id="about">
-    <div className="row section-intro">
-      <div className="col-twelve">
-        <h5>About</h5>
-        <h1>Let me introduce myself.</h1>
-        <div className="intro-info">
-          <img src="images/prof-img.jpg" alt="Profile Picture" />
-          <p className="lead">
-          Energetic student eager to build professional abilities while pursuing Bachelor of Science in Information System degree. Motivated, enthusiastic and friendly with strong communication and teamwork abilities.
-          </p>
-        </div>
-      </div>
-    </div>{" "}
-    {/* /section-intro */}
-    <div className="row about-content">
-      <div className="col-six tab-full">
-        <h3>Profile</h3>
-        <p>
-        Newly graduated professional with software development project experience. Focused, results-driven and knowledgeable in multiple computer languages. Seeking an opportunity to enhance various software packages.
-        </p>
-        <ul className="info-list">
-          <li>
-            <strong>Fullname:</strong>
-            <span>Maria Ellaine Pregunta</span>
-          </li>
-          <li>
-            <strong>Birth Date:</strong>
-            <span>February 28, 2004</span>
-          </li>
-          <li>
-            <strong>Job:</strong>
-            <span>Freelancer, Frontend Developer</span>
-          </li>
-          <li>
-            <strong>Email:</strong>
-            <span>ellainepregunta28@gmail.com</span>
-          </li>
-        </ul>{" "}
-        {/* /info-list */}
-      </div>
-      <div className="col-six tab-full">
-        <h3>Skills</h3>
-        <p>
-        Throughout my journey, I have acquired a diverse set of skills that I am eager to apply and further develop. Here’s a snapshot of what I bring to the table:
-        </p>
-        <ul className="skill-bars">
-          <li>
-            <div className="progress percent90">
-              <span>90%</span>
-            </div>
-            <strong>Teamwork</strong>
-          </li>
-          <li>
-            <div className="progress percent85">
-              <span>85%</span>
-            </div>
-            <strong>Communication</strong>
-          </li>
-          <li>
-            <div className="progress percent70">
-              <span>70%</span>
-            </div>
-            <strong>Problem Solving</strong>
-          </li>
-          <li>
-            <div className="progress percent95">
-              <span>95%</span>
-            </div>
-            <strong>UI/UX Design</strong>
-          </li>
-          <li>
-            <div className="progress percent75">
-              <span>75%</span>
-            </div>
-            <strong>Front-End Developer</strong>
-          </li>
-        </ul>{" "}
-        {/* /skill-bars */}
-      </div>
-    </div>
-    <div className="row button-section">
-      <div className="col-twelve">
-        <a href="Curriculum_Vitae.pdf" title="Download CV" className="button button-primary">
-          Download CV
-        </a>
-      </div>
-    </div>
-  </section>{" "}
-  {/* /process*/}
-  {/* resume Section
-   ================================================== */}
-  <section id="resume" className="grey-section">
-    <div className="row section-intro">
-      <div className="col-twelve">
-        <h5>Resume</h5>
-        <h1>More of my credentials.</h1>
-        <p className="lead">
-        Throughout my academic and professional journey, I have consistently demonstrated a commitment to excellence and continuous learning. My credentials reflect a blend of rigorous education and practical experience, equipping me with the skills and knowledge necessary to excel in the field of Information Systems
-        </p>
-      </div>
-    </div>{" "}
-    {/* /section-intro*/}
-    <div className="row resume-timeline">
-      <div className="col-twelve resume-header">
-        <h2>Work Experience</h2>
-      </div>{" "}
-      {/* /resume-header */}
-      <div className="col-twelve">
-        <div className="timeline-wrap">
-          <div className="timeline-block">
+     <body id="top">
 
-          </div>{" "}
-          {/* /timeline-block */}
-          {/* /timeline-block */}
-          <div className="timeline-block">
-            <div className="timeline-ico">
-              <i className="fa fa-briefcase" />
-            </div>
-            <div className="timeline-header">
-              <h3>Cashier Assistant</h3>
-              <p>January 2024 - Present</p>
-            </div>
-            <div className="timeline-content">
-              <h4>Nora Pregunta Poultry Supply</h4>
-              <p>
-              Motivated Cashier with a record of success in providing exceptional service and sales support in retail environments. Offering established numerical and communication abilities. Strong team player committed to assisting colleagues and management with all activities necessary for store success.
-              </p>
-            </div>
-          </div>{" "}
-          {/* /timeline-block */}
-        </div>{" "}
-        {/* /timeline-wrap */}
-      </div>{" "}
-      {/* /col-twelve */}
-    </div>{" "}
-    {/* /resume-timeline */}
-    <div className="row resume-timeline">
-      <div className="col-twelve resume-header">
-        <h2>Education</h2>
-      </div>{" "}
-      {/* /resume-header */}
-      <div className="col-twelve">
-        <div className="timeline-wrap">
-          <div className="timeline-block">
-            <div className="timeline-ico">
-              <i className="fa fa-graduation-cap" />
-            </div>
-            <div className="timeline-header">
-              <h3>Associate Degree</h3>
-              <p>September 2022 - July 2024</p>
-            </div>
-            <div className="timeline-content">
-              <h4>La Verdad Christian College</h4>
-              <p>
-              I graduated with an Associate in Computer Technology degree from La Verdad Christian College in July 2024. This program provided me with a solid foundation in computer systems, software applications, and information technology. Throughout my studies, I gained practical experience in areas such as computer programming, network administration, database management, and web development. These skills have equipped me to tackle various challenges in the IT industry and contribute effectively to any team or project.
+        {/* header 
+        ================================================== */}
+        <header>   	
+          <div className="row">
+
+            <div className="top-bar">
+              <a className="menu-toggle" href="#"><span>Menu</span></a>
+
+              <div className="logo">
+                  <a href="index.html">KARDS</a>
+                </div>		      
+
+              <nav id="main-nav-wrap">
+                <ul className="main-navigation">
+                  <li className="current"><a className="smoothscroll"  href="#intro" title="">Home</a></li>
+                  <li><a className="smoothscroll"  href="#about" title="">About</a></li>
+                  <li><a className="smoothscroll"  href="#resume" title="">Resume</a></li>
+                  <li><a className="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+                  <li><a className="smoothscroll"  href="#services" title="">Services</a></li>					
+                  <li><a className="smoothscroll"  href="#contact" title="">Contact</a></li>	
+                  <li><a href="styles.html" title="">Style Demo</a></li>				
+                </ul>
+              </nav>    		
+            </div> {/* /top-bar */} 
+            
+          </div> {/* /row */} 		
+        </header> {/* /header */}
+
+        {/* intro section
+        ================================================== */}
+        <section id="intro">   
+
+          <div className="intro-overlay"></div>	
+
+          <div className="intro-content">
+            <div className="row">
+
+              <div className="col-twelve">
+
+                <h5>Hello, World.</h5>
+                <h1>I'm Juan Dela Cruz.</h1>
+
+                <p className="intro-position">
+                  <span>Front-end Developer</span>
+                  <span>UI/UX Designer</span> 
+                </p>
+
+                <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+              </div>  
+              
+            </div>   		 		
+          </div> {/* /intro-content */} 
+
+          <ul className="intro-social">        
+              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i className="fa fa-behance"></i></a></li>
+              <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+            </ul> {/* /intro-social */}      	
+
+        </section> {/* /intro */}
 
 
-              </p>
+        {/* about section
+        ================================================== */}
+        <section id="about">  
+
+          <div className="row section-intro">
+            <div className="col-twelve">
+
+              <h5>About</h5>
+              <h1>Let me introduce myself.</h1>
+
+              <div className="intro-info">
+
+                <img src="images/profile-pic.jpg" alt="Profile Picture" />
+
+                <p className="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+              </div>   			
+
+            </div>   		
+          </div> {/* /section-intro */}
+
+          <div className="row about-content">
+
+            <div className="col-six tab-full">
+
+              <h3>Profile</h3>
+              <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+              <ul className="info-list">
+                <li>
+                  <strong>Fullname:</strong>
+                  <span>Juan Dela Cruz</span>
+                </li>
+                <li>
+                  <strong>Birth Date:</strong>
+                  <span>September 28, 1987</span>
+                </li>
+                <li>
+                  <strong>Job:</strong>
+                  <span>Freelancer, Frontend Developer</span>
+                </li>
+                <li>
+                  <strong>Website:</strong>
+                  <span>www.kardswebsite.com</span>
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <span>me@kardswebsite.com</span>
+                </li>
+
+              </ul> {/* /info-list */}
+
             </div>
-          </div>{" "}
-          {/* /timeline-block */}
-          <div className="timeline-block">
-            <div className="timeline-ico">
-              <i className="fa fa-graduation-cap" />
+
+            <div className="col-six tab-full">
+
+              <h3>Skills</h3>
+              <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+              <ul className="skill-bars">
+                <li>
+                  <div className="progress percent90"><span>90%</span></div>
+                  <strong>HTML5</strong>
+                </li>
+                <li>
+                  <div className="progress percent85"><span>85%</span></div>
+                  <strong>CSS3</strong>
+                </li>
+                <li>
+                  <div className="progress percent70"><span>70%</span></div>
+                  <strong>JQuery</strong>
+                </li>
+                <li>
+                  <div className="progress percent95"><span>95%</span></div>
+                  <strong>PHP</strong>
+                </li>
+                <li>
+
+                  <div className="progress percent75"><span>75%</span></div>
+                  <strong>Wordpress</strong>
+                </li>
+            
+              </ul> {/* /skill-bars */}		
+
             </div>
-            <div className="timeline-header">
-              <h3>Bachelor Degree</h3>
-              <p>August 2024 - Present</p>
-            </div>
-            <div className="timeline-content">
-              <h4>La Verdad Christian College</h4>
-              <p>
-              Currently, I am pursuing my Bachelor of Science in Information Systems at La Verdad Christian College. This program is further enhancing my technical skills and knowledge, preparing me for more advanced roles in the field. I am eager to continue building my professional abilities and applying my expertise to real-world projects.
-              </p>
-            </div>
-          </div>{" "}
-          {/* /timeline-block */}
-        
-          {/* /timeline-block */}
-        </div>{" "}
-        {/* /timeline-wrap */}
-      </div>{" "}
-      {/* /col-twelve */}
-    </div>{" "}
-    {/* /resume-timeline */}
-  </section>{" "}
-  {/* /features */}
-  {/* Portfolio Section
-   ================================================== */}
-  <section id="portfolio">
-    <div className="row section-intro">
-      <div className="col-twelve">
-        <h5>Projects</h5>
-        <h1>Check Out Some of My Works.</h1>
-        <p className="lead">
-        Here are some of my projects I created during my academic journey and personal endeavors. Each project showcases my skills and dedication to the field of Information Systems.
-        <br />
-        <br />
-        Feel free to explore these projects to see my work in action!
-        </p>
-      </div>
-    </div>{" "}
-    {/* /section-intro*/}
-    <div className="row portfolio-content">
-      <div className="col-twelve">
-        {/* portfolio-wrapper */}
-        <div id="folio-wrapper" className="block-1-2 block-mob-full stack">
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/liberty.jpg" alt="Liberty" />
-              <a href="#modal-01" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Liberty</h3>
-                    <span className="folio-types">Graphic Design</span>
+
+          </div>
+
+          <div className="row button-section">
+            <div className="col-twelve">
+              <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
+              <a href="#" title="Download CV" className="button button-primary">Download CV</a>
+            </div>   		
+          </div>
+
+        </section> {/* /process*/}    
+
+
+        {/* resume Section
+        ================================================== */}
+        <section id="resume" className="grey-section">
+
+          <div className="row section-intro">
+            <div className="col-twelve">
+
+              <h5>Resume</h5>
+              <h1>More of my credentials.</h1>
+
+              <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+            </div>   		
+          </div> {/* /section-intro*/} 
+
+          <div className="row resume-timeline">
+
+            <div className="col-twelve resume-header">
+
+              <h2>Work Experience</h2>
+
+            </div> {/* /resume-header */}
+
+            <div className="col-twelve">
+
+              <div className="timeline-wrap">
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-graduation-cap"></i>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
-              <a href="#modal-02" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Shutterbug</h3>
-                    <span className="folio-types">Web Design</span>
+
+                  <div className="timeline-header">
+                    <h3>UI Designer</h3>
+                    <p>July 2015 - Present</p>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/clouds.jpg" alt="Clouds" />
-              <a href="#modal-03" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Clouds</h3>
-                    <span className="folio-types">Web Design</span>
+
+                  <div className="timeline-content">
+                    <h4>Awesome Studio</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/beetle.jpg" alt="Beetle" />
-              <a href="#modal-04" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Beetle</h3>
-                    <span className="folio-types">Branding</span>
+
+                </div> {/* /timeline-block */}
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-graduation-cap"></i>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
-              <a href="#modal-05" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Lighthouse</h3>
-                    <span className="folio-types">Web Development</span>
+
+                  <div className="timeline-header">
+                    <h3>Front-end Developer</h3>
+                    <p>July 2014 - June 2015</p>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          <div className="bgrid folio-item">
-            <div className="item-wrap">
-              <img src="images/portfolio/salad.jpg" alt="Salad" />
-              <a href="#modal-06" className="overlay">
-                <div className="folio-item-table">
-                  <div className="folio-item-cell">
-                    <h3 className="folio-title">Salad</h3>
-                    <span className="folio-types">Branding</span>
+
+                  <div className="timeline-content">
+                    <h4>Super Cool Agency</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
                   </div>
+
+                </div> {/* /timeline-block */}
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-graduation-cap"></i>
+                  </div>
+
+                  <div className="timeline-header">
+                    <h3>Web Designer</h3>
+                    <p>May 2013 - June 2014</p>
+                  </div>
+
+                  <div className="timeline-content">
+                    <h4>Great Designs Studio</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                  </div>
+
+                </div> {/* /timeline-block */}
+
+              </div> {/* /timeline-wrap */}   			
+
+            </div> {/* /col-twelve */}
+            
+          </div> {/* /resume-timeline */}
+          
+          <div className="row resume-timeline">
+
+            <div className="col-twelve resume-header">
+
+              <h2>Education</h2>
+
+            </div> {/* /resume-header */}
+
+            <div className="col-twelve">
+
+              <div className="timeline-wrap">
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-briefcase"></i>
+                  </div>
+
+                  <div className="timeline-header">
+                    <h3>Master Degree</h3>
+                    <p>July 2015 - Present</p>
+                  </div>
+
+                  <div className="timeline-content">
+                    <h4>University of Life</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                  </div>
+
+                </div> {/* /timeline-block */}
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-briefcase"></i>
+                  </div>
+
+                  <div className="timeline-header">
+                    <h3>Bachelor Degree</h3>
+                    <p>July 2014 - June 2015</p>
+                  </div>
+
+                  <div className="timeline-content">
+                    <h4>State Design University</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                  </div>
+
+                </div> {/* /timeline-block */}
+
+                <div className="timeline-block">
+
+                  <div className="timeline-ico">
+                    <i className="fa fa-briefcase"></i>
+                  </div>
+
+                  <div className="timeline-header">
+                    <h3>Bachelor Degree</h3>
+                    <p>May 2013 - June 2014</p>
+                  </div>
+
+                  <div className="timeline-content">
+                    <h4>Design College</h4>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                  </div>
+
+                </div> {/* /timeline-block */}
+
+              </div> {/* /timeline-wrap */}   			
+
+            </div> {/* /col-twelve */}
+            
+          </div> {/* /resume-timeline */}
+          
+        </section> {/* /features */}
+
+
+        {/* Portfolio Section
+        ================================================== */}
+        <section id="portfolio">
+
+          <div className="row section-intro">
+            <div className="col-twelve">
+
+              <h5>Portfolio</h5>
+              <h1>Check Out Some of My Works.</h1>
+
+              <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+            </div>   		
+          </div> {/* /section-intro*/} 
+
+          <div className="row portfolio-content">
+
+            <div className="col-twelve">
+
+              {/* portfolio-wrapper */}
+                <div id="folio-wrapper" className="block-1-2 block-mob-full stack">
+
+                  <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/liberty.jpg" alt="Liberty" />
+                          <a href="#modal-01" className="overlay">	                  	           
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Liberty</h3>	     					    
+                                <span className="folio-types">
+                                    Graphic Design
+                                </span>
+                            </div>	                      	
+                            </div>                    
+                          </a>
+                      </div>	               
+                    </div> {/* /folio-item */}
+
+                    <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
+                        <a href="#modal-02" className="overlay">              		                  
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Shutterbug</h3>	     					    
+                              <span className="folio-types">
+                                    Web Design
+                              </span>		     		
+                            </div> 	                      	
+                            </div>                    
+                          </a>
+                      </div>
+                    </div> {/* /folio-item */}
+
+                    <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/clouds.jpg"alt="Clouds" />
+                          <a href="#modal-03" className="overlay">             		                  
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Clouds</h3>	     					    
+                              <span className="folio-types">
+                                    Web Design
+                              </span>		     		
+                            </div> 	                      	
+                            </div>                    
+                          </a>
+                      </div>
+                    </div> {/* /folio-item */}
+
+                    <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/beetle.jpg" alt="Beetle" />
+                          <a href="#modal-04" className="overlay">                  	                 
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Beetle</h3>	     					    
+                              <span className="folio-types">
+                                    Branding
+                              </span>		     		
+                            </div>  	                      	
+                            </div>                    
+                          </a>
+                      </div>
+                    </div> {/* /folio-item */}     
+
+                    <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
+                          <a href="#modal-05" className="overlay">             		                  
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Lighthouse</h3>	     					    
+                              <span className="folio-types">
+                                    Web Development
+                              </span>		     		
+                            </div> 	                      	
+                            </div>                    
+                          </a>
+                      </div>
+                    </div> {/* /folio-item */}
+
+                    <div className="bgrid folio-item">
+                      <div className="item-wrap">
+                        <img src="images/portfolio/salad.jpg" alt="Salad" />
+                          <a href="#modal-06" className="overlay">
+                            <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Salad</h3>	     					    
+                              <span className="folio-types">
+                                    Branding
+                              </span>		     		
+                            </div>	                      	
+                            </div>                    
+                          </a>
+                      </div>
+                    </div> {/* /folio-item */}   
+
+                    {/* modal popups - begin
+                    ============================================================= */}
+                    <div id="modal-01" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Liberty</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Web Development</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-01 */}
+
+                <div id="modal-02" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Shutterbug</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Web Design</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-02 */}
+
+                <div id="modal-03" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Clouds</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Web Design</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-03 */}
+
+                <div id="modal-04" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Beetle</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Branding</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-04 */}
+
+                <div id="modal-05" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Lighthouse</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Web Development</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-05 */}
+
+                <div id="modal-06" className="popup-modal slider mfp-hide">	
+
+                    <div className="media">
+                      <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+                    </div>      	
+
+                  <div className="description-box">
+                      <h4>Salad</h4>		      
+                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                      <div className="categories">Branding</div>			               
+                  </div>
+
+                    <div className="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                      <a href="#" className="popup-modal-dismiss">Close</a>
+                    </div>		      
+
+                </div> {/* /modal-06 */}
+
+
+                {/* modal popups - end
+                    ============================================================= */}
+
+                </div> {/* /portfolio-wrapper */} 
+
+            </div>  {/* /twelve */}   
+
+          </div> {/* /portfolio-content */} 
+          
+        </section> {/* /portfolio */} 
+
+
+        {/* CTA Section
+        ================================================== */}
+        <section id="cta" className="grey-section">
+
+          <div className="row cta-content">
+
+            <div className="col-twelve section-ads">  
+
+                <h2 className="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+
+                <p className="lead">
+                Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+              Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+              {/* Simply type	the promocode in the box labeled “Promo Code” when placing your order. */}	
+              </p>
+
+              <div className="action">
+                  <a className="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+                </div>		     	
+
+            </div>
+
+          </div> {/* /cta-content */}
+
+        </section> {/* /cta */} 
+
+
+        {/* services Section
+        ================================================== */}
+        <section id="services">
+
+          <div className="overlay"></div>
+
+          <div className="row section-intro">
+            <div className="col-twelve">
+
+              <h5>Services</h5>
+              <h1>What Can I Do For You?</h1>
+
+              <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+            </div>   		
+          </div> {/* /section-intro */}
+
+          <div className="row services-content">
+
+            <div id="owl-slider" className="owl-carousel services-list">
+
+                <div className="service">	
+
+                  <span className="icon"><i className="icon-earth"></i></span>            
+
+                    <div className="service-content">	
+
+                      <h3>Webdesign</h3>
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                    </p>
+                    
+                  </div> 	         	 
+
+              </div> {/* /service */}
+
+              <div className="service">	
+
+                <span className="icon"><i className="icon-window"></i></span>                          
+
+                    <div className="service-content">	
+
+                      <h3>Web Development</h3>  
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                    </p>
+
+                    </div>	                          
+
+              </div> {/* /service */}
+
+              <div className="service">
+
+                <span className="icon"><i className="icon-paint-brush"></i></span>		            
+
+                    <div className="service-content">
+
+                      <h3>Branding</h3>
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                      </p> 
+
+                    </div> 	            	               
+
+              </div> {/* /service */}
+
+              <div className="service">
+
+                <span className="icon"><i className="icon-toggles"></i></span>	              
+
+                    <div className="service-content">
+
+                      <h3>UI/UX Design</h3>
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                    </p> 
+                    
+                    </div>                
+
+              </div> {/* /service */}
+
+              <div className="service">
+
+                <span className="icon"><i className="icon-image"></i></span>	            
+
+                    <div className="service-content">
+
+                      <h3>Graphics Design</h3>
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                      </p> 
+
+                    </div>	               
+
+              </div> {/* /service */}
+
+              <div className="service">
+
+                <span className="icon"><i className="icon-chat"></i></span>	   	           
+
+                    <div className="service-content">
+
+                      <h3>Consultancy</h3>
+
+                      <p className="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                      </p> 
+                      
+                    </div>	               
+
+              </div> {/* /service */}
+
+              </div> {/* /services-list */}
+            
+          </div> {/* /services-content */}
+          
+        </section> {/* /services */}	
+
+
+        {/* stats Section
+        ================================================== */}
+        <section id="stats" className="count-up">
+
+          <div className="row">
+            <div className="col-twelve">
+
+              <div className="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-pencil-ruler"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    1500
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Projects Completed
+                  </h5>
+
+                </div> {/* /stat */}					
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-users"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    900
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Happy Clients
+                  </h5>
+
+                </div> {/* /stat */}
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-badge"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    200
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Awards Received
+                  </h5>
+
+                </div> {/* /stat */}									
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-light-bulb"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    120
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Crazy Ideas
+                  </h5>
+
+                </div> {/* /stat */}
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-cup"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    1500
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Coffee Cups
+                  </h5>
+
+                </div> {/* /stat */}
+
+                <div className="bgrid stat">
+
+                  <div className="icon-part">
+                    <i className="icon-clock"></i>
+                  </div>
+
+                  <h3 className="stat-count">
+                    7200
+                  </h3>
+
+                  <h5 className="stat-title">
+                    Hours
+                  </h5>
+
+                </div> {/* /stat */}
+
+              </div> {/* /stats-list */}
+
+            </div> {/* /twelve */}
+          </div> {/* /row */}
+
+        </section> {/* /stats */}
+
+
+        {/* contact
+        ================================================== */}
+        <section id="contact">
+
+          <div className="row section-intro">
+            <div className="col-twelve">
+
+              <h5>Contact</h5>
+              <h1>I'd Love To Hear From You.</h1>
+
+              <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+            </div> 
+          </div> {/* /section-intro */}
+
+          <div className="row contact-form">
+
+            <div className="col-twelve">
+
+                  {/* form */}
+                  <form name="contactForm" id="contactForm" method="post" action="">
+                  <fieldset>
+
+                        <div className="form-field">
+                      <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" />
+                        </div>
+                        <div className="form-field">
+                      <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" />
+                      </div>
+                        <div className="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" />
+                      </div>                       
+                        <div className="form-field">
+                          <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+                      </div>                      
+                      <div className="form-field">
+                          <button className="submitform">Submit</button>
+                          <div id="submit-loader">
+                              <div className="text-loader">Sending...</div>                             
+                          <div className="s-loader">
+                          <div className="bounce1"></div>
+                          <div className="bounce2"></div>
+                          <div className="bounce3"></div>
+                      </div>
+                    </div>
+                        </div>
+
+                  </fieldset>
+                </form> {/* Form End */}
+
+                  {/* contact-warning */}
+                  <div id="message-warning">            	
+                  </div>            
+                  {/* contact-success */}
+                <div id="message-success">
+                    <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                 </div>
-              </a>
-            </div>
-          </div>{" "}
-          {/* /folio-item */}
-          {/* modal popups - begin
-	            ============================================================= */}
-          <div id="modal-01" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Liberty</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Web Development</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-01 */}
-          <div id="modal-02" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Shutterbug</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Web Design</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-02 */}
-          <div id="modal-03" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Clouds</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Web Design</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-03 */}
-          <div id="modal-04" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Beetle</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Branding</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-04 */}
-          <div id="modal-05" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Lighthouse</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Web Development</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-05 */}
-          <div id="modal-06" className="popup-modal slider mfp-hide">
-            <div className="media">
-              <img src="images/portfolio/modals/m-salad.jpg" alt="" />
-            </div>
-            <div className="description-box">
-              <h4>Salad</h4>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh id elit.
-              </p>
-              <div className="categories">Branding</div>
-            </div>
-            <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
-              <a href="#" className="popup-modal-dismiss">
-                Close
-              </a>
-            </div>
-          </div>{" "}
-          {/* /modal-06 */}
-          {/* modal popups - end
-	            ============================================================= */}
-        </div>{" "}
-        {/* /portfolio-wrapper */}
-      </div>{" "}
-      {/* /twelve */}
-    </div>{" "}
-    {/* /portfolio-content */}
-  </section>{" "}
-  {/* /portfolio */} 
-  {/* contact
-   ================================================== */}
-  <section id="contact">
-    <div className="row section-intro">
-      <div className="col-twelve">
-        <h5>Contact</h5>
-        <h1>I'd Love To Hear From You.</h1>
-        <p className="lead">
-        I look forward to connecting with you and discussing how we can collaborate on exciting projects. Your feedback and insights are invaluable, and I am eager to hear your thoughts. Let's create something amazing together!
-        </p>
-      </div>
-    </div>{" "}
-    {/* /section-intro */}
-    <div className="row contact-form">
-      <div className="col-twelve">
-        {/* form */}
-        <form name="contactForm" id="contactForm" method="post" action="">
-          <fieldset>
-            <div className="form-field">
-              <input
-                name="contactName"
-                type="text"
-                id="contactName"
-                placeholder="Name"
-                defaultValue=""
-                minLength={2}
-                required=""
-              />
-            </div>
-            <div className="form-field">
-              <input
-                name="contactEmail"
-                type="email"
-                id="contactEmail"
-                placeholder="Email"
-                defaultValue=""
-                required=""
-              />
-            </div>
-            <div className="form-field">
-              <input
-                name="contactSubject"
-                type="text"
-                id="contactSubject"
-                placeholder="Subject"
-                defaultValue=""
-              />
-            </div>
-            <div className="form-field">
-              <textarea
-                name="contactMessage"
-                id="contactMessage"
-                placeholder="message"
-                rows={10}
-                cols={50}
-                required=""
-                defaultValue={""}
-              />
-            </div>
-            <div className="form-field">
-              <button className="submitform">Submit</button>
-              <div id="submit-loader">
-                <div className="text-loader">Sending...</div>
-                <div className="s-loader">
-                  <div className="bounce1" />
-                  <div className="bounce2" />
-                  <div className="bounce3" />
-                </div>
+
+              </div> {/* /col-twelve */}
+            
+          </div> {/* /contact-form */}
+
+          <div className="row contact-info">
+
+            <div className="col-four tab-full">
+
+              <div className="icon">
+                <i className="icon-pin"></i>
               </div>
-            </div>
-          </fieldset>
-        </form>{" "}
-        {/* Form End */}
-        {/* contact-warning */}
-        <div id="message-warning"></div>
-        {/* contact-success */}
-        <div id="message-success">
-          <i className="fa fa-check" />
-          Your message was sent, thank you!
-          <br />
-        </div>
-      </div>{" "}
-      {/* /col-twelve */}
-    </div>{" "}
-    {/* /contact-form */}
-    <div className="row contact-info">
-      <div className="col-four tab-full">
-        <div className="icon">
-          <i className="icon-pin" />
-        </div>
-        <h5>Where to find me</h5>
-        <p>
-          Mac Arthur Highway Sampaloc
-          <br />
-          Apalit, Pampanga
-          <br />
-          2016 Philippines
-        </p>
-      </div>
-      <div className="col-four tab-full collapse">
-        <div className="icon">
-          <i className="icon-mail" />
-        </div>
-        <h5>Email Me At</h5>
-        <p>
-          ellainepregunta26@gmail.com
-          <br />
-          ellainepregunta28@gmail.com
-        </p>
-      </div>
-      <div className="col-four tab-full">
-        <div className="icon">
-          <i className="icon-phone" />
-        </div>
-        <h5>Call Me At</h5>
-        <p>
-          Phone: (+63) 981 255 9915
-          <br />
-          Mobile: (+63) 555 0100
-          <br />
-          Fax: (+63) 555 0101
-        </p>
-      </div>
-    </div>{" "}
-    {/* /contact-info */}
-  </section>{" "}
-  {/* /contact */}
-  {/* footer
-   ================================================== */}
-  <footer>
-    <div className="row">
-      <div className="col-six tab-full pull-right social">
-        <ul className="footer-social">
-          <li>
-            <a href="https://www.facebook.com/eleng.pregunta">
-              <i className="fa fa-facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ellainezch_">
-              <i className="fa fa-instagram" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="col-six tab-full">
-        <div className="copyright">
-          <span>© Copyright Kards 2016.</span>
-          <span>
-            Design by <a href="http://www.styleshout.com/">styleshout</a>
-          </span>
-        </div>
-      </div>
-      <div id="go-top">
-        <a className="smoothscroll" title="Back to Top" href="#top">
-          <i className="fa fa-long-arrow-up" />
-        </a>
-      </div>
-    </div>{" "}
-    {/* /row */}
-  </footer>
-</>
 
+              <h5>Where to find me</h5>
+
+              <p>
+                  1600 Amphitheatre Parkway<br />
+                  Mountain View, CA<br />
+                  94043 US
+                  </p>
+
+            </div>
+
+            <div className="col-four tab-full collapse">
+
+              <div className="icon">
+                <i className="icon-mail"></i>
+              </div>
+
+              <h5>Email Me At</h5>
+
+              <p>someone@kardswebsite.com<br />
+                info@kardswebsite.com			     
+              </p>
+
+            </div>
+
+            <div className="col-four tab-full">
+
+              <div className="icon">
+                <i className="icon-phone"></i>
+              </div>
+
+              <h5>Call Me At</h5>
+
+              <p>Phone: (+63) 555 1212<br />
+                Mobile: (+63) 555 0100<br />
+                  Fax: (+63) 555 0101
+              </p>
+
+            </div>
+            
+          </div> {/* /contact-info */}
+          
+        </section> {/* /contact */}
+
+
+        {/* footer
+        ================================================== */}
+
+        <footer>
+            <div className="row">
+
+              <div className="col-six tab-full pull-right social">
+
+                <ul className="footer-social">        
+                  <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i className="fa fa-behance"></i></a></li>
+                  <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                  <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+              </ul> 
+                  
+              </div>
+
+              <div className="col-six tab-full">
+                <div className="copyright">
+                    <span>© Copyright Kards 2016.</span> 
+                    <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+                  </div>		                  
+                </div>
+
+                <div id="go-top">
+                  <a className="smoothscroll" title="Back to Top" href="#top"><i className="fa fa-long-arrow-up"></i></a>
+                </div>
+
+              </div> {/* /row */}     	
+        </footer>  
+
+        </body>
+    </>
   )
 }
 
